@@ -37,7 +37,7 @@
     <p id="cookie-description">
         Nous utilisons des cookies pour améliorer l'expérience des utilisateurs.<br>
         Pour en savoir plus sur notre politique en matière de cookies, consultez <a href="/durabac/conf">notre politique de confidentialité.</a><br>
-		Veuillez indiquer votre préférence concernant l'utilisation des cookies.
+	Veuillez indiquer votre préférence concernant l'utilisation des cookies.
     </p>
     <button id="accept-cookies">J'accepte</button>
     <button id="refuse-cookies">Refuser</button>
@@ -58,18 +58,18 @@
 			banner.style.display = 'none';
 		}, 500);
 	}
-
+	// Inclure les scripts Google Analytics ici
 	function loadGoogleAnalytics() {
 		var script = document.createElement('script');
 		script.async = true;
-		script.src = "https://www.googletagmanager.com/gtag/js?id=G-6QXEQR8Q8L";
+		script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX";
 		document.head.appendChild(script);
 
 		script.onload = function() {
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'G-6QXEQR8Q8L', {
+			gtag('config', 'G-XXXXXXXX', {
                 'client_storage': 'none',
                 'anonymize_ip': true
             });
@@ -122,12 +122,12 @@
 <?php else: ?>
     <?php if ($_COOKIE['cookie_consent'] === 'accepted'): ?>
         <!-- Inclure les scripts Google Analytics ici -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QXEQR8Q8L"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-6QXEQR8Q8L');
+            gtag('config', 'G-XXXXXXXX');
         </script>
     <?php endif; ?>
 <?php endif; ?>
