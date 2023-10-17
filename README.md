@@ -1,4 +1,4 @@
-# Script - Bannière de consentement pour les cookies bilingue (fr-en)
+# Script - Bannière de consentement pour les cookies | bilingue (fr-en)
 
 Ce code, compatible avec FuelCMS et d'autres frameworks CodeIgniter, retarde le chargement des scripts qui gèrent les cookies jusqu'à ce que l'utilisateur donne son accord explicite pour l'utilisation des cookies.
 
